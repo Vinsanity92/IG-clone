@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="logo">
+        </a>
+        <input type="text" class="search" placeholder="Search">
+        <span class="nav-link">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-comments"></i></a>
+            <a href="#"><i class="fas fa-compass"></i></a>
+            <a href="#"><i class="fas fa-heart"></i></a>
+        </span>
+    </nav>
+
+<div class="container">
+    <section class="bio">
+        <div class="profile-photo">
+            <img src="image/pr.photo.jfif">
+            
+        </div>
+        <div class="profile-info">
+            <p class="name">Vince Ong <button>Edit Profile</button>
+            <a href="#"><i class="fas fa-user-cog"></i></a></p>
+            <h5><strong>200</strong> posts</h5>
+            <h5><strong>20k</strong> followers</h5>
+            <h5><strong>5k</strong> following</h5>
+        </div>
+    </section>
+
+    <div class="gallery-nav">
+        <i class="fas fa-th">POSTS</i>
+        <i class="far fa-play-circle">VIDEOS</i>
+        <i class="fas fa-bookmark">SAVED</i>
+        <i class="fas fa-user-tag">TAGGED</i>
+    </div>
+
+    <div class="photolist">
+    <input type="text" id="photo" placeholder="Add URL..."><br><br>
+    <textarea id="caption" placeholder="Add Caption"></textarea><br><br>
+    <button onclick="getInput()" class="btn btn-success">Post</button>
+    <div id="output"></div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
